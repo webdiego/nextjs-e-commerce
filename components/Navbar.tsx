@@ -20,12 +20,14 @@ export default function NavBar() {
 
   return (
     <>
-      <header className="sticky top-0 w-screen z-50 shadow-xs bg-white">
-        <NavigationMenu className="w-full">
+      <header className="sticky top-0 w-full z-50 shadow-xs bg-white">
+        <NavigationMenu className="w-full max-w-4xl mx-auto">
           <NavigationMenuList className="flex justify-between items-center w-full px-4 py-2">
-            <div className="text-xl font-bold">Logo</div>
+            <div className="text-xl font-bold mr-10">
+              <h1>Woodesign</h1>
+            </div>
 
-            <div className="flex space-x-4 items-center">
+            <div className="flex  w-full space-x-4 items-center">
               <NavigationMenuItem>
                 <NavigationMenuLink
                   asChild
