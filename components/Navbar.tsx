@@ -44,15 +44,6 @@ export default function NavBar() {
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  asChild
-                  className={navigationMenuTriggerStyle()}
-                >
-                  <Link href="/checkout">Checkout</Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-
               {/* Cart Drawer Trigger */}
               <Button variant={"ghost"} onClick={() => setIsOpen(!isOpen)}>
                 <ShoppingCart />
