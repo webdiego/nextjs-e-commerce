@@ -49,15 +49,15 @@ export default function DrawerProducts({
   return (
     <Drawer direction="right" open={isOpen} onOpenChange={onClose}>
       <DrawerContent>
-        <div className="mx-auto w-full max-w-sm">
+        <div className="mx-auto w-full max-w-sm ">
+          <Image
+            src={product.images[0]}
+            alt=""
+            width={200}
+            height={200}
+            className="object-cover h-64 w-full p-2"
+          />
           <DrawerHeader>
-            <Image
-              src={product.images[0]}
-              alt=""
-              width={500}
-              height={500}
-              className="object-cover h-72 w-full"
-            />
             <DrawerTitle>{product.name}</DrawerTitle>
             <DrawerDescription>{product.description}</DrawerDescription>
           </DrawerHeader>
